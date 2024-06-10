@@ -27,7 +27,8 @@ mov result, al
 
 lea bx, table
 
-lea si, asciir
+
+ si, asciir
 add si, 1
 
 mov al, result
@@ -43,6 +44,7 @@ shr al, cl
 xlat
 
 mov [si], al
+
 mov ah, 09h
 lea dx, msg
 int 21h

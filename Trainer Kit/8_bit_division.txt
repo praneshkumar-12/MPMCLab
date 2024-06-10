@@ -1,0 +1,12 @@
+MOV AH,00H
+MOV AL,55H
+MOV BL,01H
+DIV BL
+MOV [8500],AL
+MOV [8501],AH
+HLT
+
+
+Output:
+ [8500] --- 55 (Quotient)
+ [8501] --- 00 (Remainder)

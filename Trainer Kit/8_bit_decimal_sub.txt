@@ -1,0 +1,10 @@
+MOV AL,12H
+MOV BL,12H
+SUB AL,BL
+DAS
+MOV [8500],AL
+HLT
+
+
+Output:
+ [8500] --- 00

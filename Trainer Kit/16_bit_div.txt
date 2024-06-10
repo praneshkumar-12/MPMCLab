@@ -1,0 +1,15 @@
+MOV AX,1234H
+MOV BX, 1234H
+MOV DX, 0000H
+DIV BX
+MOV [8500],AX //quotient
+MOV [8502],DX //remainder
+HLT
+
+Output:
+ [8500] --- 01
+ [8501] --- 00
+ [8502] --- 00
+ [8503] --- 00
+ //[8500]&[8501] — Quotient
+ //[8502]&[8503] — Remainder

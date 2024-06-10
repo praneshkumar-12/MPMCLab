@@ -1,0 +1,9 @@
+MOV AX, 1234H
+MOV BX, 1234H
+ADD AX,BX
+MOV [8500], AX
+HLT
+
+Output:
+ [8500] --- 68
+ [8501] --- 24

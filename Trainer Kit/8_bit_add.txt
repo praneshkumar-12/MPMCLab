@@ -1,0 +1,9 @@
+MOV AL,44H
+MOV BL,55H
+ADD AL,BL
+MOV [8500],AL
+HLT
+
+
+Output:
+ [8500] --- 99

@@ -1,0 +1,9 @@
+MOV AL,22H
+MOV BL,01H
+MUL BL
+MOV [8500],AX
+HLT
+
+Output:
+ [8500] --- 22
+ [8501] --- 00 

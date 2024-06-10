@@ -25,6 +25,7 @@ lea SI, deci
 add SI,3
 
 TOP: 
+
 cmp ax,cx
 jb BOTTOM
 xor dx, dx

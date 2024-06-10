@@ -1,0 +1,12 @@
+MOV AH,00H
+MOV AL,12H
+MOV BL,12H
+AAD
+DIV BL
+MOV [8500],AX
+HLT
+
+
+Output:
+ [8500] --- 01 //Quotient
+ [8501] --- 00 //Remainder

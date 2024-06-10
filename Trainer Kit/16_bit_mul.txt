@@ -1,0 +1,14 @@
+MOV AX,1234H
+MOV BX, 1234H
+MOV DX, 0000H
+MUL BX
+MOV [8500],AX
+MOV [8502],DX
+HLT
+
+
+Output:
+ [8500] --- 90
+ [8501] --- 5A
+ [8502] --- 4B
+ [8503] --- 01
